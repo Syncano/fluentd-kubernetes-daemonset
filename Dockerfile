@@ -33,3 +33,4 @@ ENV FLUENTD_CONF="fluent.conf"
 
 # Run Fluentd
 CMD exec fluentd -c /fluentd/etc/$FLUENTD_CONF -p /fluentd/plugins $FLUENTD_OPT
+ENTRYPOINT ["/usr/bin/dumb-init", "--"]

@@ -15,7 +15,6 @@ RUN set -ex && \
     && gem install fluent-plugin-cloudwatch-logs \
     && gem install fluent-plugin-kubernetes_metadata_filter \
     && gem install fluent-plugin-rewrite-tag-filter \
-    && gem install fluent-plugin-fields-parser \
     && apk del .build-deps \
     && gem sources --clear-all \
     && rm -rf /tmp/* /var/tmp/* /usr/lib/ruby/gems/*/cache/*.gem
